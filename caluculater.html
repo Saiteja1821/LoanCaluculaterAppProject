@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Caluculater App</title>
+    <link rel="stylesheet" type="text/css" href="caluculater.css">
+</head>
+<body>
+    <div class="container">
+
+            <h1>Loan Caluculater</h1>
+            <p>Loan Amount $    <input id="amount" class="input" type="number" min="1" max="5000000" onchange="computeLoan()"></p>
+            <p>Interest Rate %  <input id="interest_rate" class="input" type="number" min="0" max="100" value="10" step=".1" onchange="computeLoan()"></p>
+            <p>Months To Pay    <input id="months" class="input" type="number" min="1" max="300" value="1" step="1" onchange="computeLoan()"></p>
+            <h1 id="payment"></h1>
+    </div>
+    <script src="caluculater.js"></script>
+</body>
+</html>
